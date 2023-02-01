@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/Interface=Mobile\,\ Theme=Dark\ mode.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+#container {
+    width: 360px;
+    height: 712px;
+
+    margin: auto;
+    position: absolute;
+    top: 56px;
+    left: calc(50% - 360px/2);
+}
+
+#profile {
+    width: 360px;
+    height: 192px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+    padding: 24px;
+}
+
+#profile img {
+    width: 112px;
+    height: 112px;
+}
+
+#profile a {
+    font-family: 'Inter';
+    font-weight: 400;
+    color: #ffffff;
+}
+
+#links {
+    width: 360px;
+    height: 320px;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+#links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+#links a {
+    width: 312px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 16px 24px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-weight: 500px;
+    transition: background 1s;
+}   
+
+#links a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid #FFFFFF;
+    backdrop-filter: blur(4px);
+    transition: background 0.5s;
+}
+
+#social {
+    width: 360px;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 16px;
+    border-radius: 50%;
+
+    font-size: 26px;
+    color: #FFFFFF;
+    transition: font-size 1s;
+    transition: background 0.5s;
+}
+#social a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    font-size: 34px;
+    transition: font-size 0.5s;
+    transition: background 0.5s;
+    
+}
+
+#footer {
+    width: 360px;
+    height: 72px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px;
+}
+
+#footer p {
+    font-family: 'Inter';
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
