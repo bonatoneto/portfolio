@@ -70,6 +70,28 @@ body {
     color: var(--text-color);
 }
 
+#switch {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+switch span {
+    width: 64px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+#switch button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-image: url(assets/moon-stars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #links {
     width: 360px;
     height: 320px;
