@@ -14,6 +14,7 @@
     --bg-bt: rgba(255, 255, 255, 0.05);
     --bg-bt-hover: rgba(255, 255, 255, 0.01);
     --highlight-hover: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(assets/moon-stars.svg);
 } 
 
 .light {
@@ -24,6 +25,7 @@
     --bg-bt: rgba(0, 0, 0, 0.05);
     --bg-bt-hover: rgba(0, 0, 0, 0.02);
     --highlight-hover: rgba(0, 0, 0, 0.1);
+    --switch-bg-url: url(assets/sun.svg);
 }
 
 body * {
@@ -61,7 +63,6 @@ body {
 #profile img {
     width: 112px;
     height: 112px;
-
 }
 
 #profile a {
@@ -71,25 +72,40 @@ body {
 }
 
 #switch {
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    width: 64px;
+    
+    margin: 4px auto;
 }
 
-switch span {
+#switch span {
+    display: block;
+    /* por padrão o span é sempre display inline, tendo que trocar por display block*/
     width: 64px;
     height: 24px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: var(--bg-bt);
+    border: 1px solid var(--stroke-color);
+    border-radius: 9999px;
 }
 #switch button {
     width: 32px;
     height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0;
     border-radius: 50%;
-    background-image: url(assets/moon-stars.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+  
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    animation: slide-back 0.5s;
+  
+}
+
+.light #switch button {
+    left: initial;
+    right: 0;
 }
 
 #links {
@@ -182,4 +198,16 @@ switch span {
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
+}
+
+@media (min-width: 1250px) {
+    :root {
+        --bg-url: url('./assets/bg-desktop-dark.jpg')
+    }
+
+    .light {
+        --bg-url: url('./assets/bg-desktop-light.jpg')
+    }
+
+    
 }
