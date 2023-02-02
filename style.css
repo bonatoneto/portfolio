@@ -6,8 +6,31 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text-color: #ffffff;
+    --bg-url: url(assets/bg-mobile-dark.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --stroke-color-hover: #ffffff;
+    --bg-bt: rgba(255, 255, 255, 0.05);
+    --bg-bt-hover: rgba(255, 255, 255, 0.01);
+    --highlight-hover: rgba(255, 255, 255, 0.2);
+} 
+
+.light {
+    --text-color: #000000;
+    --bg-url: url(assets/bg-mobile-light.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --stroke-color-hover: #000000;
+    --bg-bt: rgba(0, 0, 0, 0.05);
+    --bg-bt-hover: rgba(0, 0, 0, 0.02);
+    --highlight-hover: rgba(0, 0, 0, 0.1);
+}
+
+body * {
+    color: var(--text-color)
+}
 body {
-    background-image: url(assets/Interface=Mobile\,\ Theme=Dark\ mode.jpg);
+    background-image: var(--bg-url);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -38,12 +61,13 @@ body {
 #profile img {
     width: 112px;
     height: 112px;
+
 }
 
 #profile a {
     font-family: 'Inter';
     font-weight: 400;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 #links {
@@ -71,21 +95,20 @@ body {
 
     padding: 16px 24px;
 
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: var(--bg-bt);
+    border: 1px solid var(--stroke-color);
     border-radius: 8px;
 
-    color: #ffffff;
+    color: var(--text-color);
     text-decoration: none;
     font-family: 'Inter';
-    font-weight: 500px;
+    font-weight: 500;
     transition: background 1s;
 }   
 
 #links a:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1.5px solid #FFFFFF;
-    backdrop-filter: blur(4px);
+    background: var(--bg-bt-hover);
+    border: 1.5px solid var(--stroke-color-hover);
     transition: background 0.5s;
 }
 
@@ -106,13 +129,13 @@ body {
     border-radius: 50%;
 
     font-size: 26px;
-    color: #FFFFFF;
+    color: var(--text-color);
     transition: font-size 1s;
     transition: background 0.5s;
 }
 #social a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #FFFFFF;
+    background: var(--highlight-hover);
+    color: var(--text-color);
     font-size: 34px;
     transition: font-size 0.5s;
     transition: background 0.5s;
@@ -133,7 +156,7 @@ body {
 
 #footer p {
     font-family: 'Inter';
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
