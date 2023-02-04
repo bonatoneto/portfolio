@@ -20,8 +20,8 @@ function toggleMode() {
     //trocando o avatar 
     const img = document.querySelector("#profile img")
     if (html.classList.contains('lights')) {
-        img.setAttribute('src', './assets/Avatar-lightmode.png')
+        img.setAttribute('src', 'assets/Avatar-lightmode.png')
     } else {
-        img.setAttribute('src', './assets/Avatar-darkmode.png')
+        img.setAttribute('src', 'assets/Avatar-darkmode.png')
     }
 }
