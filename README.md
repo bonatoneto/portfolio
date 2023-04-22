@@ -1,2 +1,16 @@
-# devlinks
- Page Links: https://bonatoneto.github.io/devlinks/
+<strong><h1 align="center">Portfólio</h1></strong>
+
+<p align="center">
+  <img alt="" src="assets/preview.png" width="100%">
+</p>
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- HTML
+- CSS
+- JavaScript
+- Git
+---
+<strong align="center">[João A. Bonato](https://bonatoneto.github.io/devlinks/)</strong>
