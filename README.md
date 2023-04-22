@@ -13,4 +13,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript
 - Git
 ---
-By [João A. Bonato](https://bonatoneto.github.io/devlinks/)
+<strong><p align="center">By [João A. Bonato](https://bonatoneto.github.io/portfolio/)</p></strong>
